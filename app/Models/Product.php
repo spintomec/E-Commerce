@@ -17,10 +17,10 @@ class Product extends Model
             ->withPivot('total_quantity', 'total_price');
     }
 
-    public function prince(): Attribute {
+    public function price(): Attribute {
         
         return Attribute::make(
-            get: fn($value) => str_replace('.' ',', $value / 100).
-        )
+                    get: fn($value) => str_replace('.', ',', $value / 100) . ' €'
+                );
     }
 }

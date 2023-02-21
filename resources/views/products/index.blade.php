@@ -36,8 +36,10 @@
                                                 <p tabindex="0" class="focus:outline-none text-xs text-gray-600 pl-5">{{ $product->created_at }}</p>
                                             </div>
                                             <p tabindex="0" class="focus:outline-none text-xs text-gray-600 mt-2">{{ $product->description }}</p>
-                                            <div class="flex items-center justify-between py-4">
-                                                <button class="bg-indigo-500 text-white p-2">Ajouter au panier</button>
+                                            
+                                            <div id="app"> 
+                                                <add-to-cart />
+                                                {{-- <chek-box></chek-box> --}}
                                             </div>
                                         </div>
                                     </div>
